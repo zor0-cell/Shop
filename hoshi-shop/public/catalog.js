@@ -1,0 +1,13 @@
+const rows=[
+['notebooks','Sakura Days Notebook','Тетрадь «Дни сакуры»','Sakura Days',32000,12,'A5 · 80 sheets · Ruled','А5 · 80 листов · Линейка','A cherry-blossom cover, spiral binding and lined pages for your everyday notes.','Тетрадь на пружине с цветущей сакурой на обложке и страницами в линейку.'],
+['keychains','Kitsune Acrylic Charm','Акриловый брелок «Кицунэ»','Little Kitsune',25000,8,'Acrylic · 6 cm · Metal ring','Акрил · 6 см · Кольцо','A little fox in a lilac scarf with a clear acrylic edge and a silver-tone keyring.','Лисёнок в сиреневом шарфе из прозрачного акрила на серебристом кольце.'],
+['stickers','Ramen Club Sticker Set','Набор стикеров «Рамен-клуб»','Ramen Club',18000,20,'6 stickers · 3–6 cm · Vinyl','6 наклеек · 3–6 см · Винил','A little feast of ramen, rice balls and sushi for your journal or laptop.','Миниатюрный набор с раменом, онигири и суши для дневника или ноутбука.'],
+['notebooks','Moonlit Blade Notebook','Тетрадь «Лунный клинок»','Moonlit Blade',38000,7,'A5 · 96 sheets · Dotted','А5 · 96 листов · Точка','Moonlit cover art surrounds a dotted journal for notes and sketches.','Тетрадь в точку для заметок и набросков с лунной иллюстрацией.'],
+['keychains','Shooting Star Keyring','Брелок «Падающая звезда»','Star Voyage',30000,10,'Enamel metal · 4 cm','Металл с эмалью · 4 см','A golden shooting star with an enamel finish and matching chain.','Золотистая звезда с эмалью и цепочкой в тон.'],
+['stickers','Cosmic Cat Stickers','Стикеры «Космический кот»','Cosmic Cat',22000,14,'7 stickers · 3–5 cm · Vinyl','7 наклеек · 3–5 см · Винил','A collection of pastel cats, tiny moons and stars.','Коллекция пастельных котиков, лун и звёзд.'],
+['notebooks','Forest Spirit Journal','Блокнот «Лесной дух»','Forest Spirit',35000,6,'A6 · 64 sheets · Plain','А6 · 64 листа · Без разлиновки','A pocket journal with a woodland cover and space for sketches.','Карманный блокнот с лесной обложкой и чистыми листами.'],
+['keychains','Forest Spirit Plush','Мягкий брелок «Лесной дух»','Forest Spirit',42000,4,'Plush · 8 cm · Metal clasp','Плюш · 8 см · Карабин','A soft mint forest companion for your bag.','Мягкий мятный лесной спутник для вашей сумки.'],
+['stickers','Sakura Picnic Stickers','Стикеры «Пикник под сакурой»','Sakura Days',20000,15,'6 stickers · 4–6 cm · Vinyl','6 наклеек · 4–6 см · Винил','Cherry blossoms and tiny picnic treats for your planner.','Цветущая сакура и маленькие угощения для ежедневника.']
+];
+export const demo=rows.map(([category,name,ru,anime,price,stock,spec,specRu,desc,descRu],i)=>({id:'demo'+i,category,name,ru,anime,price,stock,spec,specRu,desc,descRu,images:['/art/item'+i+'.webp'],hidden:0,created:1700000000000-i,version:1}));
+export const defaults={name:'Hoshi Shop',phone:'',pickup:'',fee:0};
